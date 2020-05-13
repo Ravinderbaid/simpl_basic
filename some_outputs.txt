@@ -1,0 +1,35 @@
+new user u ua@gmail.com 300
+u(300)
+new user ub ub@gmail.com 400
+ub(400)
+new user uc uc@gmail.com 500
+uc(500)
+new merchant ma ma@gmail.com 0.5
+ma(0.5)
+new merchant mb mb@gmail.com 1.5
+mb(1.5)
+new merchant mc mc@gmail.com 1.25
+mc(1.25)
+new txn ub ma 500
+rejected : reason : Credit limit
+new txn u mb 300
+success
+new txn u mc 10
+rejected : reason : Credit limit
+report users-at-credit-limit
+u
+new txn uc mc 200
+success
+new txn uc mc 300
+success
+report users-at-credit-limit
+u
+uc
+report discount mc
+6.25
+payback uc 400
+uc(dues:100.0)
+report total-dues
+u: 300.0
+uc: 100.0
+total: 400.0

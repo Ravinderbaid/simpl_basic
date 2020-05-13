@@ -1,0 +1,29 @@
+This is the list of accepted commands -
+
+New user -
+new user ua ua@gmail.com 1000
+
+New merchant -
+new merchant ma ma@gmail.com 10
+
+New transaction -
+new txn ua ma 100
+
+New payback -
+payback ua 100
+
+Dues of a user -
+report dues ua
+
+Dues of all user-
+report total-dues
+
+Users at credit limit -
+report users-at-credit-limit
+
+Total discount recieved -
+report discount ma
+
+Update discount -
+update merchant ma 10
+
