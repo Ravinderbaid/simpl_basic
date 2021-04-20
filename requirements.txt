@@ -5,6 +5,6 @@ funcsigs==1.0.2
 mock==3.0.5
 more-itertools==5.0.0
 pluggy==0.6.0
-py==1.8.1
+py==1.10.0
 pytest==3.5.1
 six==1.14.0
